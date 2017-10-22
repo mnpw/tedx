@@ -17,6 +17,8 @@
   color: black;
   font-weight: bolder;
   font-size: 1.3em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
 }
 
 .column.circle {
@@ -39,6 +41,7 @@
   background-color: rgba(63, 173, 168, 0.3);
   position: absolute;
   -webkit-transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 
