@@ -4,7 +4,7 @@
 			<title>TEDx IIITD</title>
 			<link rel="stylesheet" type="text/css" href="css/bulma.css">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
-			<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="js/animatespeakers.js"></script>
 			<script type="text/javascript">
@@ -25,61 +25,64 @@
 			</script>
 		</head>
 		<body>
-			<section class="hero is-fullheight header">
-				<div class="hero-body">
-					<div class="container">
-						<div class="title">
-							<img src="img/logo2.png" width="40%">
+			<section class="hero  header">
+				<div class="hero-body" style="padding: 0;">
+					<div class="columns" id="maincolumn" style="margin: 0;">
+						<div class="column is-4">
+							<div class="hero is-fullheight">
+								<div class="hero-body">
+									<img src="img/logo2.png" width="70%"><br>
+									<strong style="color: black;">March, 2018</strong>
+								</div>
+							</div>
 						</div>
-						<div class="subtitle">
-							<strong style="color: black;">March, 2018</strong>
+						<div class="column is-8" style="padding: 0 0;">
+							<div class="hero is-fullheight">
+								<div class="hero-body">
+									<div>
+										<div style="text-align: center; color: white; font-family: 'Text Me One', sans-serif;" class="is-size-1">Speakers</div>
+										<div class="columns">
+											<div class="column circle">
+												<div class="overlay" onmouseover="animatespeakers(1, true);" onmouseout="animatespeakers(1, false);"></div>
+												<img id="speaker1" src="img/speakers/speaker1.jpg">
+												<div align="center" class="speaker-name">Tycho McManus</div>
+											</div>
+											<div class="column circle">
+												<div class="overlay" onmouseover="animatespeakers(2, true);" onmouseout="animatespeakers(2, false);"></div>
+												<img id="speaker2" src="img/speakers/speaker2.jpg">
+												<div align="center" class="speaker-name">Chip Conley</div>
+											</div>
+											<div class="column circle">
+												<div class="overlay" onmouseover="animatespeakers(3, true);" onmouseout="animatespeakers(3, false);"></div>
+												<img id="speaker3" src="img/speakers/speaker3.jpg">
+												<div align="center" class="speaker-name">Kailash Satyarthi</div>
+											</div>
+										</div>
+										
+										<div class="columns">
+											<div class="column circle">
+												<div class="overlay" onmouseover="animatespeakers(4, true);" onmouseout="animatespeakers(4, false);"></div>
+												<img id="speaker4" src="img/speakers/speaker4.jpg">
+												<div align="center" class="speaker-name">Salman Khan</div>
+											</div>
+											<div class="column circle">
+												<div class="overlay" onmouseover="animatespeakers(5, true);" onmouseout="animatespeakers(5, false);"></div>
+												<img id="speaker5" src="img/speakers/speaker5.jpg">
+												<div align="center" class="speaker-name">Raghuram Rajan</div>
+											</div>
+											<div class="column circle">
+												<div class="overlay" onmouseover="animatespeakers(6, true);" onmouseout="animatespeakers(6, false);"></div>
+												<img id="speaker6" src="img/speakers/speaker6.jpg">
+												<div align="center" class="speaker-name">Shashi Tharoor</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-
 					</div>
-				</div>		
+				</div>
 			</section>
-			<div class="hero is-fullheight" style="background-image: linear-gradient(to bottom, rgba(63, 173, 168, 1), rgba(255, 255, 255, 1));">
-				<br>
-				<div style="text-align: center; color: white; font-family: 'Patua One', cursive;" class="is-size-1">Speakers</div><br>
-				<div class="columns">
-					<div class="column circle">
-						<div class="overlay" onmouseover="animatespeakers(1, true);" onmouseout="animatespeakers(1, false);"></div>
-						<img id="speaker1" src="img/speakers/speaker1.jpg">
-						<div align="center" class="speaker-name">Tycho McManus</div>
-					</div>
-					<div class="column circle">
-						<div class="overlay" onmouseover="animatespeakers(2, true);" onmouseout="animatespeakers(2, false);"></div>
-						<img id="speaker2" src="img/speakers/speaker2.jpg">
-						<div align="center" class="speaker-name">Chip Conley</div>
-					</div>
-					<div class="column circle">
-						<div class="overlay" onmouseover="animatespeakers(3, true);" onmouseout="animatespeakers(3, false);"></div>
-						<img id="speaker3" src="img/speakers/speaker3.jpg">
-						<div align="center" class="speaker-name">Kailash Satyarthi</div>
-					</div>
-					<div class="column circle">
-						<div class="overlay" onmouseover="animatespeakers(4, true);" onmouseout="animatespeakers(4, false);"></div>
-						<img id="speaker4" src="img/speakers/speaker4.jpg">
-						<div align="center" class="speaker-name">Salman Khan</div>
-					</div>
-				</div>
-				<div class="columns">
-					<div class="column circle">
-					</div>
-					<div class="column circle">
-						<div class="overlay" onmouseover="animatespeakers(5, true);" onmouseout="animatespeakers(5, false);"></div>
-						<img id="speaker5" src="img/speakers/speaker5.jpg">
-						<div align="center" class="speaker-name">Raghuram Rajan</div>
-					</div>
-					<div class="column circle">
-						<div class="overlay" onmouseover="animatespeakers(6, true);" onmouseout="animatespeakers(6, false);"></div>
-						<img id="speaker6" src="img/speakers/speaker6.jpg">
-						<div align="center" class="speaker-name">Shashi Tharoor</div>
-					</div>
-					<div class="column circle">
-					</div>
-				</div>
-			</div>
 			<br><br>
 			<footer class="footer" style="background-color: white;">
 				<div class="container">
