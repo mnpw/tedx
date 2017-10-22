@@ -7,6 +7,7 @@
 			<link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="js/animatespeakers.js"></script>
+			<script src="js/bio.js"></script>
 			<script type="text/javascript">
 				$(document).ready (function() {
 					$(".overlay").css('height', $('#speaker1').css('height'));
@@ -42,24 +43,24 @@
 								</div>
 							</div>
 						</div>
-						<div class="column is-8" style="padding: 0 0;">
+						<div class="column is-8" id="speakerslist" style="padding: 0 0;">
 							<div class="hero is-fullheight">
 								<div class="hero-body">
 									<div>
-										<div style="text-align: center; color: white; font-family: 'Text Me One', sans-serif;" class="is-size-1">Speakers</div>
+										<div style="text-align: center; color: white; font-family: 'Text Me One', sans-serif; margin-top: -5%;" class="is-size-1">SPEAKERS THAT INSPIRE</div>
 										<div class="columns">
 											<div class="column circle">
-												<div class="overlay" onmouseover="animatespeakers(1, true);" onmouseout="animatespeakers(1, false);"></div>
+												<div class="overlay" onmouseover="animatespeakers(1, true);" onmouseout="animatespeakers(1, false);" onclick="movelistup(1);"></div>
 												<img id="speaker1" src="img/speakers/speaker1.jpg">
-												<div align="center" class="speaker-name">Tycho McManus</div>
+												<div align="center" class="speaker-name">Gabriel Sayegh</div>
 											</div>
 											<div class="column circle">
-												<div class="overlay" onmouseover="animatespeakers(2, true);" onmouseout="animatespeakers(2, false);"></div>
+												<div class="overlay" onmouseover="animatespeakers(2, true);" onmouseout="animatespeakers(2, false);" onclick="movelistup(2);"></div>
 												<img id="speaker2" src="img/speakers/speaker2.jpg">
 												<div align="center" class="speaker-name">Chip Conley</div>
 											</div>
 											<div class="column circle">
-												<div class="overlay" onmouseover="animatespeakers(3, true);" onmouseout="animatespeakers(3, false);"></div>
+												<div class="overlay" onmouseover="animatespeakers(3, true);" onmouseout="animatespeakers(3, false);" onclick="movelistup(3);"></div>
 												<img id="speaker3" src="img/speakers/speaker3.jpg">
 												<div align="center" class="speaker-name">Kailash Satyarthi</div>
 											</div>
@@ -67,19 +68,45 @@
 										
 										<div class="columns">
 											<div class="column circle">
-												<div class="overlay" onmouseover="animatespeakers(4, true);" onmouseout="animatespeakers(4, false);"></div>
+												<div class="overlay" onmouseover="animatespeakers(4, true);" onmouseout="animatespeakers(4, false);" onclick="movelistup(4);"></div>
 												<img id="speaker4" src="img/speakers/speaker4.jpg">
 												<div align="center" class="speaker-name">Salman Khan</div>
 											</div>
 											<div class="column circle">
-												<div class="overlay" onmouseover="animatespeakers(5, true);" onmouseout="animatespeakers(5, false);"></div>
+												<div class="overlay" onmouseover="animatespeakers(5, true);" onmouseout="animatespeakers(5, false);" onclick="movelistup(5);"></div>
 												<img id="speaker5" src="img/speakers/speaker5.jpg">
 												<div align="center" class="speaker-name">Raghuram Rajan</div>
 											</div>
 											<div class="column circle">
-												<div class="overlay" onmouseover="animatespeakers(6, true);" onmouseout="animatespeakers(6, false);"></div>
+												<div class="overlay" onmouseover="animatespeakers(6, true);" onmouseout="animatespeakers(6, false);" onclick="movelistup(6);"></div>
 												<img id="speaker6" src="img/speakers/speaker6.jpg">
 												<div align="center" class="speaker-name">Shashi Tharoor</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column is-8" id="speakerdetails" style="display: none;">
+							<div class="hero is-fullheight">
+								<div class="hero-body">
+									<div class="container">
+										<div class="columns">
+											<div class="column is-one-third">
+											</div>
+											<div class="column">
+												<div style="color: white; font-family: 'Text Me One', sans-serif; margin-top: -5%;" class="is-size-1">SPEAKERS THAT INSPIRE</div>
+											</div>
+										</div>
+										<div class="columns">
+											<div class="column circle is-4">
+												<img id="speakerdetailsimage" src="img/speakers/speaker1.jpg">
+												<div align="center" id="speakerdetailsname" class="speaker-name">Gabriel Sayegh</div>
+											</div>
+											<div class="column is-6" id="speakerdetailsbio" style="color: black;">
+												Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit 
+												Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit 
+												Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit 
 											</div>
 										</div>
 									</div>
