@@ -8,22 +8,6 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="js/animatespeakers.js"></script>
 			<script src="js/bio.js"></script>
-			<script type="text/javascript">
-				$(document).ready (function() {
-					$(".overlay").css('height', $('#speaker1').css('height'));
-					$(".overlay").css('width', $('#speaker1').css('width'));
-					$(".overlay").css('margin', $('#speaker1').css('margin'));
-					$(".overlay").css('border', $('#speaker1').css('border'));
-					$(".overlay").css('border-radius', $('#speaker1').css('border-radius'));
-				});
-				$(window).resize (function() {
-					$(".overlay").css('height', $('#speaker1').css('height'));
-					$(".overlay").css('width', $('#speaker1').css('width'));
-					$(".overlay").css('margin', $('#speaker1').css('margin'));
-					$(".overlay").css('border', $('#speaker1').css('border'));
-					$(".overlay").css('border-radius', $('#speaker1').css('border-radius'));
-				})
-			</script>
 		</head>
 		<body>
 			<section class="hero  header">
@@ -158,4 +142,31 @@
 				</div>
 			</footer>
 		</body>
+		<script type="text/javascript">
+			$(document).ready (function() {
+				$(".overlay").css('height', $('#speaker1').css('height'));
+				$(".overlay").css('width', $('#speaker1').css('width'));
+				$(".overlay").css('margin', $('#speaker1').css('margin'));
+				$(".overlay").css('border', $('#speaker1').css('border'));
+				$(".overlay").css('border-radius', $('#speaker1').css('border-radius'));
+			});
+			$(window).resize (function() {
+				$(".overlay").css('height', $('#speaker1').css('height'));
+				$(".overlay").css('width', $('#speaker1').css('width'));
+				$(".overlay").css('margin', $('#speaker1').css('margin'));
+				$(".overlay").css('border', $('#speaker1').css('border'));
+				$(".overlay").css('border-radius', $('#speaker1').css('border-radius'));
+			});
+
+			var myimages=new Array()
+			function preloadimages(){
+				for (i=0;i<preloadimages.arguments.length;i++){
+					myimages[i]=new Image()
+					myimages[i].src=preloadimages.arguments[i]
+				}
+			}
+
+			preloadimages("img/speakers/animated1.gif", "img/speakers/animated2.gif", "img/speakers/animated3.gif", "img/speakers/animated4.gif", "img/speakers/animated5.gif");
+
+		</script>
 	</html>
